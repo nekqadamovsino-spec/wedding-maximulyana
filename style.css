@@ -59,3 +59,38 @@ left:0;
 .location-photo:hover{
     transform:scale(1.02);
 }
+/* Фото локаций */
+
+.location-photo{
+    display:block;
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    border-radius:18px;
+    margin:22px 0 10px;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+    transition:.35s;
+}
+
+.location-photo:hover{
+    transform:scale(1.02);
+}
+
+.map-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    margin-top:15px;
+    background:#7b5d4d;
+    color:#fff;
+    text-decoration:none;
+    border-radius:14px;
+    font-size:15px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.map-btn:hover{
+    background:#6a4e40;
+}
