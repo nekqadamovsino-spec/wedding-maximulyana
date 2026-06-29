@@ -14,18 +14,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="animated-bg" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
-    <span class="line line-1"></span>
-    <span class="line line-2"></span>
-    <span class="line line-3"></span>
-    <span class="petal petal-1"></span>
-    <span class="petal petal-2"></span>
-    <span class="petal petal-3"></span>
-    <span class="petal petal-4"></span>
-  </div>
+  <div class="video-bg">
+    <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/video/silk.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</div>
   <div class="grain"></div>
   <button class="music" id="musicBtn" aria-label="music">♪</button>
 
