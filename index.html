@@ -142,18 +142,40 @@
       <div class="inner card reveal">
         <h2>Подтвердите присутствие</h2>
         <p>Пожалуйста, дайте ответ до 1 сентября.</p>
-        <form id="rsvpForm">
-          <input name="name" placeholder="Ваше имя" required>
-          <select name="guest" required>
-            <option value="">Вы сможете прийти?</option>
-            <option>Да, буду</option>
-            <option>Буду с парой</option>
-            <option>К сожалению, не смогу</option>
-          </select>
-          <textarea name="comment" placeholder="Комментарий / пожелание"></textarea>
-          <button type="submit">Отправить</button>
-        </form>
-        <p class="status" id="status"></p>
+<form id="rsvpForm">
+  <input name="name" placeholder="Ваше имя" required>
+
+  <div class="form-group">
+    <p>Сможете ли присутствовать?</p>
+
+    <label>
+      <input type="radio" name="guest" value="Да" required>
+      Да
+    </label>
+
+    <label>
+      <input type="radio" name="guest" value="К сожалению, не смогу присутствовать">
+      К сожалению, не смогу присутствовать
+    </label>
+  </div>
+
+  <div class="form-group">
+    <p>Что предпочитаете из напитков?</p>
+
+    <label><input type="checkbox" name="alcohol" value="Водка"> Водка</label>
+    <label><input type="checkbox" name="alcohol" value="Коньяк"> Коньяк</label>
+    <label><input type="checkbox" name="alcohol" value="Виски"> Виски</label>
+    <label><input type="checkbox" name="alcohol" value="Вино белое"> Вино белое</label>
+    <label><input type="checkbox" name="alcohol" value="Вино красное"> Вино красное</label>
+    <label><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label>
+  </div>
+
+  <textarea name="comment" placeholder="Комментарий / пожелание"></textarea>
+
+  <button type="submit">Отправить</button>
+</form>
+
+<p class="status" id="status"></p>
       </div>
     </section>
 
