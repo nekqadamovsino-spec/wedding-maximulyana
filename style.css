@@ -129,3 +129,24 @@ left:0;
 .form-group input{
   width:auto;
 }
+.dress-gallery{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.dress-gallery img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:14px;
+    border:2px solid rgba(255,255,255,.85);
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.dress-gallery img:hover{
+    transform:scale(1.05);
+}
