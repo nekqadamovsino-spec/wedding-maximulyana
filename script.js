@@ -44,7 +44,3 @@ form.addEventListener('submit', async (e)=>{
     statusEl.textContent = 'Ошибка отправки. Попробуйте позже.';
   }
 });
-
-document.getElementById('musicBtn').addEventListener('click',()=>{
-  alert('Музыку добавим после выбора трека.');
-});
